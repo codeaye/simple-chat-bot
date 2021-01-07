@@ -1,19 +1,30 @@
 {
   "name": "chatbot",
   "version": "1.1.2",
-  "description": "A simple chatbot package for discord bot devs.",
+  "description": "A simple chatbot for discord bot devs.",
   "main": "index.js",
-  "keywords": [
-    "discord",
-    "chat",
-    "bot",
-    "ai",
-    "api",
-    "js"
-  ],
-  "author": "NavWrecks",
-  "license": "ISC",
   "dependencies": {
     "node-fetch": "^2.6.1"
-  }
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheHandyUser/chatbot.git"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "chat",
+    "ai",
+    "js"
+  ],
+  "author": "Navoi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheHandyUser/chatbot/issues"
+  },
+  "homepage": "https://github.com/TheHandyUser/chatbot#readme"
 }

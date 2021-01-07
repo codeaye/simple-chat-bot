@@ -1,7 +1,7 @@
 const fetch = require('node-fetch');
 exports.chatbot = async function(message) {
     message.channel.startTyping();
-    const args = message.content.toLowerCase().replace(/<@(.*?)>/, '').replace(/[^0-9a-z]/gi, '').split(/ +/).join(" ");
+    const args = message.content.toLowerCase().replace(/<@(.*?)>/, '').replace(/[^0-9a-z]/gi, '').replace(/\s/, '');
     try{
         fetch(`https://pepee.ga/chat?message=${args}`)
             .then(res => res.json())

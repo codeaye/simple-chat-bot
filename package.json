@@ -1,5 +1,5 @@
 {
-  "name": "chatbot",
+  "name": "simple-chat-bot",
   "version": "1.1.2",
   "description": "A simple chatbot for discord bot devs.",
   "main": "index.js",

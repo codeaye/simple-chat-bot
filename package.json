@@ -1,6 +1,6 @@
 {
   "name": "simple-chat-bot",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A simple chatbot for discord bot devs.",
   "main": "index.js",
   "dependencies": {

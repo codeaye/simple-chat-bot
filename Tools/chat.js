@@ -1,6 +1,6 @@
 const fetch = require('node-fetch');
 
-async function chatbot(message) {
+async function chat(message) {
     if(message.author.bot)return
     message.channel.startTyping();
     const args = message.content.toLowerCase().replace(/<@(.*?)>/, '').replace(/[^0-9a-z]/gi, '').replace(/\s/, '');
@@ -17,4 +17,4 @@ async function chatbot(message) {
         return message.channel.stopTyping();
     }
   }
-  module.exports = chatbot;
+  module.exports = chat;

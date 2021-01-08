@@ -5,7 +5,7 @@ async function chatclient(token, chatchannels, activity) {
 
   const Discord = require("discord.js");
   const client = new Discord.Client();
-  const chatbot = require("./chatbot.js");
+  const chatbot = require("./chat.js");
 
   client.on("ready", () => {
       console.log("ChatBot is ready.");

@@ -1,18 +1,4 @@
-const fetch = require('node-fetch');
-exports.chatbot = async function(message) {
-    if(message.author.bot)return
-    message.channel.startTyping();
-    const args = message.content.toLowerCase().replace(/<@(.*?)>/, '').replace(/[^0-9a-z]/gi, '').replace(/\s/, '');
-    if(!args || args === '') return
-    try{
-        fetch(`https://pepee.ga/chat?message=${args}`)
-            .then(res => res.json())
-            .then(async json => {
-                return message.reply(json.response)
-            });
-        return message.channel.stopTyping();
-    }catch (err){
-        console.error(err);
-        return message.channel.stopTyping();
-    }
-  }
+exports.chatbot = require('./Tools/chatbot.js');
+exports.chatclient = require('./Tools/chatclient.js');
+
+//chatclient('NzYzNTkzOTQwNDg1MDEzNTQ0.X35-Rg.x-3ULdz4l8dbBSLY2yDju9yPyd4', ['🤡-dank-memer'], [`Hello`, { type: 'LISTENING' }]);
